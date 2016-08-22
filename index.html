@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>NSM2016 - Publishing with Git - Statistics Faroe Islands</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Publishing with Git</h1>
+					<h2>Statistics Faroe Island</h2>
+					<h3>Eyðun Nielsen - en@hagstovan.fo</h3>
+				</section>
+				<section><p>So</p></section>
+				<section><p>You had a copy-list...</p></section>
+				<section><p>eh?</p></section>
+				<section><p>You lucky b****rd!</p></section>
+				<section><p>This is what we had:</p></section>
+				<section data-background="img/simni.jpg"><h1 style="color: #f7fbfc">Simona</h1></section>
+				<section>
+					<p>Manualy copying files at 9:30</p>
+					<p class="fragment">WebDAV</p>
+					<p class="fragment">Error-prone</p>
+					<aside class="notes">
+						<p>Every morning she came in to the office and sat and looked at her clock untill it was 9:30</p>
+						<p>And then she manually copied the px-files out to the PXWeb server so that they got published on time.</p>
+						<p>And sometimes errors occurred - and even sometimes that much, that I somehow got involved in looking for pxfiles in some backup.</p>
+						<p>And sometimes Simona was away - like on holiday - and again somehow I got involved... And I had to meet at the office before 9:30!</p>		
+					</aside>
+				</section>
+				<section><p>So <span class="fragment">clearly something had to be done.</span></p></section>
+				<section>
+					<p>Need:</p>
+					<ul>
+						<li class="fragment">Versioning</li>
+						<li class="fragment">Internal PX Web (staging ares)</li>
+						<li class="fragment">Automation</li>
+					</ul>
+					<aside class="notes">
+						<p>We knew we needed (or would like to have):</p>
+						<p>We did use Subversion for versioning px-files (almost all) for some years, so we had some experience with using versioning, but Subversion didn't give us an obvisiously easy way to automate the publishing process.
+					</aside>
+				</section>
+				<section>
+					<h1>Enter Git</h1>
+				</section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
