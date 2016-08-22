@@ -51,7 +51,7 @@
 					<p>Need:</p>
 					<ul>
 						<li class="fragment">Versioning</li>
-						<li class="fragment">Internal PX Web (staging ares)</li>
+						<li class="fragment">Internal PX Web (staging areas)</li>
 						<li class="fragment">Automation</li>
 					</ul>
 					<aside class="notes">
@@ -62,14 +62,95 @@
 				<section>
 					<h1>Enter Git</h1>
 				</section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
+				<section>
+					<p>staging</p>
+					<p class="fragment"><small>Internal - changes/new data - (Everyone)</small></p>
+					<p>tomorrow</p>
+					<p class="fragment"><small>Internal - to be publish next day (mon-fri - 09:30) - (Dissemination/IT)</small></p>
+					<p>live</p>
+					<p class="fragment"><small>Public - Statbank (https://statbank.hagstova.fo/) - (Dissemination/IT)</small></p>
+				</section>
+
+				<section>
+					<section>
+					<h2>pxweb/staging</h2>
+						<ul>
+							<li>H2 - new statbank</li>
+							<ul>
+								<li>Unpublished data</li>
+								<li>Versioned with Git</li>
+								<li>All staff can push data</li>
+							</ul>
+							<li>Sandboxes</li>
+							<ul>
+								<li>One git-repository each</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Tools
+						<ul>
+							<li>PxWeb</li>
+							<li>PxEdit</li>
+							<li>PxWin</li>
+							<li>SublimeText (Notepad+/TextPad)</li>
+							<li>Git/GitExtensions</li>
+						</ul>
+					</section>
+
+
+					<section>
+						<p>GitExtensions:</p>
+						<img src="img/staging.png" />
+					</section>
+			
+				</section>
+
+
+				<section>
+					<section>
+					<h2>pxweb/tomorrow</h2>
+						<ul>
+							<li>H2 - new statbank</li>
+							<ul>
+								<li>Unpublished data</li>
+								<li>Versioned with Git</li>
+								<li>Only dissemination and IT can push data</li>
+								<li>HEAD of repository gets pushed out next day with cron job</li>
+							</ul>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+					<h2>pxweb/live</h2>
+						<ul>
+							<li>H2 - new statbank</li>
+							<ul>
+								<li>Published data in DMZ</li>
+								<li>Versioned with Git</li>
+								<li>Only dissemination and IT can push data</li>
+								<li>Automatic publishing with cron: mon-fri 09:30</li>
+								<li>Possible to push manualy</li>
+							</ul>
+						</ul>
+					</section>
+
+					<section>
+						<p><small><a href="https://statbank.hagstova.fo/" target="_blank">https://statbank.hagstova.fo/</a></small></p>
+						<iframe src="https://statbank.hagstova.fo/" width="100%" height="550px"></iframe>
+					</section>
+				
+				</section>
+
+
+				<section>
+					<h1>Thank you</h1>
+				</section>
+
 			</div>
 		</div>
 
